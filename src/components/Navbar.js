@@ -1,11 +1,16 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
+import { TbBrandOffice } from "react-icons/tb";
+
 
 function Navbar() {
   return (
     <>
       <div className='flex justify-between p-5'>
-        <h2>WorkSpace</h2>
+        <div className='flex items-center gap-2'>
+          <TbBrandOffice fill='#008000' />
+          <h2>WorkSpace</h2>
+        </div>
         <ul className='flex gap-10'>
           <li>
             <Link to='/spaces'>
