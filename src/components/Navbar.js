@@ -35,7 +35,7 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link to='signin'>
+            <Link to='/signin'>
               <button className='px-3 rounded-xl hover:bg-green-600'>
                 Sign in
               </button>

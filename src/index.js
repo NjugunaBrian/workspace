@@ -7,12 +7,17 @@ import {
 import './index.css';
 import './App.css';
 import App from './App';
+import Signin from './Pages/Signin';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-  }
+  },
+  {
+    path: "signin",
+    element: <Signin />,
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
