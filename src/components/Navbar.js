@@ -37,17 +37,10 @@ function Navbar() {
           <li>
             <Link to='/signin'>
               <button className='px-3 rounded-xl hover:bg-green-600'>
-                Sign in
+                Sign Up
               </button>
             </Link>
-          </li>
-          <li>
-            <Link to='login'>
-              <button className='px-3 rounded-xl hover:bg-green-600'>
-                Log in
-              </button>
-            </Link>
-          </li>
+          </li>          
         </ul>
       </div>
     </>

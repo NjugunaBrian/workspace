@@ -32,6 +32,9 @@ function Signin() {
                     <div>
                         <button className='rounded h-10 w-80 bg-green-600 px-4 py-2'>Sign Up</button>
                     </div>
+                    <div>
+                        <button className='rounded h-10 w-80 bg-sky-600 px-4 py-2' title='Log In For a Returning User' type='button'>Log In</button>
+                    </div>
 
                 </div>
                 <Auth />

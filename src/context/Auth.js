@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { GoogleAuthProvider, signInWithPopup, onAuthStateChanged} from "firebase/auth";
+import { GoogleAuthProvider, signInWithPopup, signInWithRedirect, onAuthStateChanged, signOut} from "firebase/auth";
 import { auth } from '../firebase';
 import GoogleButton from 'react-google-button';
 
@@ -11,13 +11,17 @@ const Auth = () => {
     const handleGoogleClick = async() => {
         try{
         const provider = new GoogleAuthProvider();
-        const result = await signInWithPopup(auth, provider);
+        const result = await signInWithRedirect(auth, provider);
         const user = result.user;
         
         } catch (error) {
             console.log(error);
         }
 
+    }
+
+    const logOut = () => {
+        signOut(auth)
     }
 
     useEffect(() => {
