@@ -1,7 +1,5 @@
 import React, { useState } from 'react'
-import { IoSearch } from "react-icons/io5";
 import { IoLocationOutline } from "react-icons/io5";
-import { IoCalendarOutline } from "react-icons/io5";
 
 
 
@@ -18,30 +16,26 @@ function FindSearch() {
     <>
       <section className='px-32 py-12'>
         <div className='text-center my-0 mx-auto max-w-3xl leading-6'>
-          <h2 className='text-6xl font-semi-bold'>Find a WorkSpace in <span className='text-green-600'>Nairobi </span></h2>
+          <h2 className='text-6xl font-semi-bold'>Find a WorkSpace in <span className='text-green-600 font-black'>Nairobi </span></h2>
         </div>
-        <div className='flex justify-center items-center gap-2 mt-20'>
-          <IoLocationOutline />
-          <input className='outline-none p-2' placeholder='Search for a location' />          
-          <button className='rounded-full bg-green-600 p-2'>
-            <IoSearch />
-          </button>
+        <div className='flex justify-center items-center mt-20 gap-6'>
+          <div className='bg-green-600 flex justify-center items-center rounded outline-none p-2 border-solid border-[#ccd7e6] border-[1px]'>
+            <IoLocationOutline />
+            <input className='placeholder:text-black bg-transparent outline-none mx-2' type="text" placeholder='Search for a location' />
+          </div>
+          <div className='rounded outline-none px-4 py-2 font-light border-solid border-[#ccd7e6] border-[1px]'>
+            <input
+              className='flex justify-between text-sm text-gray-500 bg-transparent outline-none'
+              id="booktime"
+              value={bookTime}
+              onChange={handleBookTime}
+              type="date"
+            ></input>
+          </div>
         </div>
-        <div className='flex flex-col justify-center items-center mt-5'>
-          <label className="text-base flex" htmlFor='picktime'>
-            <IoCalendarOutline /> &nbsp; Book a Date{" "}
-            <b>*</b>
-          </label>
-          <input
-            className='flex justify-between outline-none px-12 mt-3 font-light border-solid border-[#ccd7e6] border-[1px]'
-            id="booktime"
-            value={bookTime}
-            onChange={handleBookTime}
-            type="date"
-          ></input>
 
 
-        </div>
+
       </section>
     </>
   )
