@@ -29,14 +29,14 @@ function Navbar() {
           </li>
         </ul>
         <ul className='flex gap-10'>
-          <li>
+          <li className='px-3 rounded-xl border-solid border-[#ccd7e6] border-[1px]'>
             <Link to='blog'>
               Blog
             </Link>
           </li>
           <li>
             <Link to='/signin'>
-              <button className='px-3 rounded-xl hover:bg-green-600'>
+              <button className='px-3 rounded-xl border-solid border-[#ccd7e6] border-[1px] hover:bg-bottom button'>
                 Sign Up
               </button>
             </Link>
