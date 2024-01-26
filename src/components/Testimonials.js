@@ -74,12 +74,12 @@ const Testimonials = () => {
                                 </div>
                                 <div className='m-2'>
                                     <p>
-                                        Drogon can get a bit of rest now.
+                                        Sometimes I want to escape the monotony that is my pineapple.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div className='cols-span-1/4 bg-white w-80 shadow-lg rounded-md m-5'>
+                        <div className='row-start-3/4 row-span-1/4 bg-white w-80 shadow-lg rounded-md m-5'>
                             <div className='flex flex-col p-2'>
                                 <div className='flex gap-4 m-2'>
                                     <img className='h-auto w-12 rounded-full' src={Kanye} alt="Gangsta Monalisa" />
@@ -90,7 +90,7 @@ const Testimonials = () => {
                                 </div>
                                 <div className='m-2'>
                                     <p>
-                                        Drogon can get a bit of rest now.
+                                        When I want to quiet my demons and listen to the beats I laboured to make, WorkSpace is my go-to.
                                     </p>
                                 </div>
                             </div>
@@ -106,7 +106,7 @@ const Testimonials = () => {
                                 </div>
                                 <div className='m-2'>
                                     <p>
-                                        Drogon can get a bit of rest now.
+                                        As an orphan, WorkSpace is a place I can call home.
                                     </p>
                                 </div>
                             </div>

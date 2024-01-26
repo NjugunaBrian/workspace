@@ -4,7 +4,7 @@ import modelOffice from "../images/office.png";
 const Booking = () => {
     return (
         <>
-            <section className='bg-gray-100'>
+            <section>
                 <div className='flex flex-col'>
                     <div className='text-center mx-0 my-auto mt-5'>
                         <h2 className='text-4xl font-black tracking-wider mx-0 mt-5 mb-10'>Affordable and Spacious Work Spaces</h2>
