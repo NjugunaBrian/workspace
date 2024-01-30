@@ -22,7 +22,7 @@ function Footer() {
 
                 </div>
                 <div>
-                    <div className='flex justify-between items-center font-light m-9 opacity-75'>
+                    <div className='flex justify-between items-center font-light my-9 mx-3 opacity-75'>
                         <ul>
                             <li className='text-stone-300 mb-2'>Write to us</li>
                             <li>brian@designs.com</li>
@@ -34,7 +34,7 @@ function Footer() {
                             <li>Nairobi</li>
                         </ul>
                         <ul className='flex gap-2'>
-                            <li><a><FaXTwitter /></a></li>
+                            <li><FaXTwitter /></li>
                             <li><FaInstagram /></li>
                             <li><a href='https://linkedin.com/in/brian-njuguna-3a08aa272'><CiLinkedin /></a></li>
                         </ul>
@@ -44,8 +44,14 @@ function Footer() {
                     <hr className='bg-gray-400 opacity-25' />
 
                 </div>
-                <div className='m-2 items-center'>
-                <TbBrandOffice  />
+                <div className='flex items-center justify-between mx-2 my-5 text-stone-300'>
+                    <div className='flex items-center gap-5'>
+                        <TbBrandOffice />
+                        <p>Work Space.</p>
+                    </div>
+                    <div>
+                    <p>&copy; 2023 Brian Muriithi. All rights reserved.</p>
+                    </div>
                 </div>
 
 

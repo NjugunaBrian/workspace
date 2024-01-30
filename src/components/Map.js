@@ -1,26 +1,24 @@
-import React, { useState } from 'react';
-import { GoogleMap, Marker } from '@react-google-maps/api';
+import React, { useState, useMemo, useCallback, useRef } from 'react';
+import { GoogleMap, Marker, DirectionsRenderer, Circle } from '@react-google-maps/api';
+
+const LatLngLiteral = google.maps.LatLngLiteral;
+const DirectionalResult = google.maps.DirectionalResult;
+const MapOptions = google.maps.MapsOptions;
 
 const Map = () => {
-    const [position, setPosition] = useState(null);
-    const [submittedLocation, setSubmittedLocation] = useState(null);
+    const mapRef = useRef();
+    const center = useMemo(() => ({lat: 43, lng: -80}), []);
+    const options = useMemo(() => ({
+        disableDefaultUI : true,
+        clickableIcons : false
+    }),[]);
+    const onLoad = useCallback((map) => (mapRef.current = map), []);
 
     return (
         <>
-            {submittedLocation ? (
-                <div className='h-screen w-full'>
-                    <GoogleMap zoom={12} center={submittedLocation}>
-                        {submittedLocation && <Marker position={submittedLocation} />}
-                    </GoogleMap>
-
-                </div>
-            ) : (
-                <div className='h-screen w-full'>
-                    <GoogleMap zoom={12} center={position}>
-                        {position && <Marker position={position} />}
-                    </GoogleMap>
-                </div>
-            )}
+            <div>
+                <GoogleMap zoom={10} center={center} options={options} />
+            </div>
         </>
     )
 }
