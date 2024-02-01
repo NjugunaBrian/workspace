@@ -22,13 +22,13 @@ function Footer() {
 
                 </div>
                 <div>
-                    <div className='flex justify-between items-center font-light my-9 mx-3 opacity-75'>
-                        <ul>
+                    <div className='md:flex justify-between items-center font-light my-9 mx-3 opacity-75'>
+                        <ul className='mb-2 md:mb-0'>
                             <li className='text-stone-300 mb-2'>Write to us</li>
                             <li>brian@designs.com</li>
                             <li>+254710268389</li>
                         </ul>
-                        <ul>
+                        <ul className='mb-6 md:mb-0'>
                             <li className='text-stone-300 mb-2'>Meet Us</li>
                             <li>Via de Kenyatta 43844-00100</li>
                             <li>Nairobi</li>
@@ -45,7 +45,7 @@ function Footer() {
 
                 </div>
                 <div className='flex items-center justify-between mx-2 my-5 text-stone-300'>
-                    <div className='flex items-center gap-5'>
+                    <div className='flex items-center md:gap-5'>
                         <TbBrandOffice />
                         <p>Work Space.</p>
                     </div>
