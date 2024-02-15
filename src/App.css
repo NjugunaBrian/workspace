@@ -9,10 +9,10 @@
 }
 
 .button{
-  background-image: linear-gradient(to top, green 50%, transparent 50%);
+  background-image: linear-gradient(to top, rgb(22 163 74) 50%, transparent 50%);
   background-size: 100% 200%;
   background-position: top;
-  transition: background-position 0.5s ease-in-out; /** I've changed the time for demo purposes **/
+  transition: background-position 0.5s ease-in-out; 
   color: black;
 }
 .capital{
@@ -21,4 +21,11 @@
   transform: scaleX(0.6);
   transform-origin: 0 0;
   margin-right: -10%;
+}
+.navMenu{
+  background-image: linear-gradient(to top, rgb(22 163 74), transparent 50%);
+  background-size: 100% 200%;
+  background-position: top;
+  transition: background-position 0.5s ease-in-out;
+  color: white;
 }
