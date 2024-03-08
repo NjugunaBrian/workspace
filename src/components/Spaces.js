@@ -1,7 +1,5 @@
 import React from 'react'
 import { Swiper, SwiperSlide } from "swiper/react";
-import { IoIosArrowForward } from "react-icons/io";
-import { IoIosArrowBack } from "react-icons/io";
 import { spaces } from './officeData';
 
 
@@ -10,7 +8,7 @@ import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-import { EffectCoverflow, Pagination, Navigation } from "swiper";
+import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 
 
 
@@ -23,15 +21,26 @@ const Spaces = () => {
                 grabCursor={ true }
                 centeredSlides={ true }
                 loop={ true }
-                slidesPerView={3}
+                slidesPerView={2}
+                autoplay={{
+                    delay: 2500,
+                    disableOnInteraction: false,
+                }}
                 coverflowEffect={{
-
-                    rotate: 0,
+                    rotate: 20,
                     stretch: 0,
                     depth: 100,
-                    modifier: 2.5,
-
+                    modifier: 1,
+                    slideShadows: true,
                 }}
+                pagination={true}
+                breakpoints={{
+                    640:{
+                        slidesPerView: 4,
+                        spaceBetween: 40,
+                    },
+                }}
+                modules={[Autoplay, EffectCoverflow, Pagination]}
                
                 className='py-8 px-0 relative'
             >
