@@ -7,8 +7,6 @@ import NavMenu from './components/NavMenu';
 
 
 
-
-
 function App() {
 
   const [clicked, isClicked] = useState(false);
