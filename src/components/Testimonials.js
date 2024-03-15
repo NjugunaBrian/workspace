@@ -26,7 +26,7 @@ const Testimonials = () => {
                                 </div>
                                 <div className='m-2'>
                                     <p>
-                                        I have been working through the offices in WorkSpace and one thing I can tell you, I am a sight to see in those offices.
+                                        I have been doing my work in WorkSpace and one thing I can tell you, I am a sight to see in those offices.
                                     </p>
                                 </div>
                             </div>
