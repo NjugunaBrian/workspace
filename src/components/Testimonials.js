@@ -15,7 +15,7 @@ const Testimonials = () => {
                         <h2 className='text-4xl font-black'>Client Testimonials</h2>
                     </div>
                     <div className='grid grid-rows-3 md:grid-rows-2 grid-cols-2 md:grid-cols-3 gap-1 md:gap-2'>
-                        <div className='bg-white w-48 md:w-80 shadow-lg rounded-md m-3 md:m-5'>
+                        <div className='bg-white w-40 md:w-80 shadow-lg rounded-md m-3 md:m-5'>
                             <div className='flex flex-col p-2'>
                                 <div className='flex gap-4 m-2'>
                                     <img className='h-auto w-12 rounded-full' src={MonaLisa} alt="Gangsta Monalisa" />
@@ -31,7 +31,7 @@ const Testimonials = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='bg-white w-48 md:w-80 shadow-lg rounded-md m-3 md:m-5'>
+                        <div className='bg-white w-40 md:w-80 shadow-lg rounded-md m-3 md:m-5'>
                             <div className='flex flex-col p-2'>
                                 <div className='flex gap-4 m-2'>
                                     <img className='h-12 md:h-auto w-12 rounded-full' src={Morales} alt="Gangsta Monalisa" />
@@ -47,10 +47,10 @@ const Testimonials = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='bg-white w-48 md:w-80 shadow-lg rounded-md m-3 md:m-5'>
+                        <div className='bg-white w-40 md:w-80 shadow-lg rounded-md m-3 md:m-5'>
                             <div className='flex flex-col p-2'>
                                 <div className='flex gap-4 m-2'>
-                                    <img className='h-auto w-12 rounded-full' src={Daenerys} alt="Gangsta Monalisa" />
+                                    <img className='h-16 w-12 rounded-full' src={Daenerys} alt="Gangsta Monalisa" />
                                     <span>
                                         <h4>Daenerys <span className='truncate md:text-clip'>Targaryen</span></h4>
                                         <p className='text-slate-700'>Mother of Dragons</p>
@@ -63,26 +63,26 @@ const Testimonials = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='bg-white w-48 md:w-80 shadow-lg rounded-md m-3 md:m-5'>
+                        <div className='bg-white w-40 md:w-80 shadow-lg rounded-md m-3 md:m-5'>
                             <div className='flex flex-col p-2'>
                                 <div className='flex gap-4 m-2'>
                                     <img className='h-11 md:h-auto w-12 rounded-full' src={SpongeBob} alt="Gangsta Monalisa" />
                                     <span>
-                                        <h4>SpongeBob Squarepants</h4>
+                                        <h4>SpongeBob</h4>
                                         <p className='text-slate-700'>Blue-collar Cartoon</p>
                                     </span>
                                 </div>
                                 <div className='m-2'>
                                     <p>
-                                        Sometimes I want to escape the monotony that is my pineapple.
+                                        Sometimes I just want to escape the monotony that is my pineapple.
                                     </p>
                                 </div>
                             </div>
                         </div>
-                        <div className='row-start-3/4 row-span-1/4 bg-white w-48 md:w-80 shadow-lg rounded-md m-3 md:m-5'>
+                        <div className='row-start-3/4 row-span-1/4 bg-white w-40 md:w-80 shadow-lg rounded-md m-3 md:m-5'>
                             <div className='flex flex-col p-2'>
                                 <div className='flex gap-4 m-2'>
-                                    <img className='h-auto w-12 rounded-full' src={Kanye} alt="Gangsta Monalisa" />
+                                    <img className='h-16 w-12 rounded-full' src={Kanye} alt="Gangsta Monalisa" />
                                     <span>
                                         <h4>Kanye West</h4>
                                         <p className='text-slate-700'>Musician</p>
@@ -95,7 +95,7 @@ const Testimonials = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className='bg-white w-48 md:w-80 shadow-lg rounded-md m-3 md:m-5'>
+                        <div className='bg-white w-40 md:w-80 shadow-lg rounded-md m-3 md:m-5'>
                             <div className='flex flex-col p-2'>
                                 <div className='flex gap-4 m-2'>
                                     <img className='h-auto w-12 rounded-full' src={Naruto} alt="Gangsta Monalisa" />

@@ -13,7 +13,7 @@ const NavMenu = ({ clicked, isClicked }) => {
 
 
     return (
-        <div className='fixed top-0 right-0 h-[100vh] w-[300px] z-50 bg-[#212121] text-white transition ease-in-out duration-1000'>
+        <div className='fixed top-0 right-0 h-[200vh] w-[300px] z-50 bg-[#212121] text-white transition ease-in-out duration-1000'>
             <div className='flex items-center justify-between p-4 align-baseline'>
                 <p className='pt-12 text-sm'>NAVIGATION</p>
                 <button className='mr-3 p-5 mt-2 rounded-full bg-green-600' onClick={handleClick}><FaTimes /> </button>
