@@ -16,7 +16,7 @@ function Navbar({ clicked, isClicked }) {
 
   return (
     <>
-      <div className='flex justify-between p-5 md:p-5 sticky top-0 bg-white z-50'>
+      <div className='flex justify-between py-5 px-5 md:px-5 sticky top-0 bg-white z-50'>
         <div className='flex items-center gap-2'>
           <TbBrandOffice fill='#008000' />
           <h2>WorkSpace</h2>

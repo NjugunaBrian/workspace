@@ -15,7 +15,7 @@ import { EffectCoverflow, Pagination, Autoplay } from "swiper/modules";
 
 const Spaces = () => {
     return (
-        <section className='px-4 py-4'>
+        <section className='px-2 md:px-4 py-4'>
             <Swiper
                 effect={'coverflow'}
                 grabCursor={ true }
@@ -27,7 +27,7 @@ const Spaces = () => {
                     disableOnInteraction: false,
                 }}
                 coverflowEffect={{
-                    rotate: 20,
+                    rotate: 50,
                     stretch: 0,
                     depth: 100,
                     modifier: 1,
@@ -45,7 +45,7 @@ const Spaces = () => {
                 className='py-8 px-0 relative'
             >
                 {spaces.map((space) => (
-                    <SwiperSlide className='w-[37rem] h-[42rem] relative' key={space.name}>
+                    <SwiperSlide className='w-[34rem] h-[42rem] relative' key={space.name}>
                     <img src={space.img} alt={space.name} className='h-64 w-64 rounded-lg object-cover' />
                 </SwiperSlide>
                 

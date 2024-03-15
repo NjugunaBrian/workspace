@@ -44,13 +44,13 @@ function Footer() {
                     <hr className='bg-gray-400 opacity-25' />
 
                 </div>
-                <div className='flex items-center justify-between mx-2 my-5 text-stone-300'>
+                <div className='flex items-center justify-between mx-1 md:mx-2 my-5 text-stone-300'>
                     <div className='flex items-center md:gap-5'>
                         <TbBrandOffice />
                         <p>Work Space.</p>
                     </div>
                     <div>
-                    <p>&copy; 2023 Brian Muriithi. All rights reserved.</p>
+                        <p className='flex flex-col md:flex-row'>&copy; 2023 Brian Muriithi. <span>All rights reserved.</span></p>
                     </div>
                 </div>
 
