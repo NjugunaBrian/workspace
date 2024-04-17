@@ -9,12 +9,13 @@ import './App.css';
 import App from './App';
 import Signin from './Pages/Signin';
 import Login from './Pages/Login';
+import { AuthProvider } from './context/authContext';
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-  }, 
+  },
   {
     path: "signin",
     element: <Signin />,
@@ -27,7 +28,9 @@ const router = createBrowserRouter([
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <RouterProvider router={router} />
+  <AuthProvider>
+    <RouterProvider router={router} />
+  </AuthProvider>
 );
 
 

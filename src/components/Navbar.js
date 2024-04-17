@@ -1,8 +1,10 @@
 import React from 'react'
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import { TbBrandOffice } from "react-icons/tb";
 import { FaTimes } from "react-icons/fa";
 import { FaBars } from "react-icons/fa6";
+import { useAuth } from '../context/authContext';
+import { logOut } from '../context/Auth';
 
 
 
@@ -13,6 +15,9 @@ function Navbar({ clicked, isClicked }) {
   const handleClick = () => {
     isClicked(!clicked);
   }
+
+  const Navigate = useNavigate();
+  const { userLoggedIn } = useAuth();
 
   return (
     <>
@@ -48,11 +53,20 @@ function Navbar({ clicked, isClicked }) {
             </NavLink>
           </li>
           <li>
-            <NavLink to='/signin'>
-              <button className='float-right px-3 rounded-xl border-solid border-[#ccd7e6] border-[1px] hover:bg-bottom button'>
-                Sign Up
-              </button>
-            </NavLink>
+            {
+              userLoggedIn ?
+                <>
+                  <button onClick={() => {logOut().then(() => {Navigate('/login')})} } className='float-right px-3 rounded-xl border-solid border-[#ccd7e6] border-[1px] hover:bg-bottom button'>
+                    Log Out
+                  </button>
+                </>
+                :
+                <NavLink to='/signin'>
+                  <button className='float-right px-3 rounded-xl border-solid border-[#ccd7e6] border-[1px] hover:bg-bottom button'>
+                    Sign Up
+                  </button>
+                </NavLink>
+            }
           </li>
 
         </ul>

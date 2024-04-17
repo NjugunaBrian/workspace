@@ -5,7 +5,6 @@ import Home from './Pages/Home';
 import Signin from './Pages/Signin';
 import NavMenu from './components/NavMenu';
 import Login from './Pages/Login';
-import { AuthProvider } from './context/authContext';
 
 
 
@@ -26,10 +25,8 @@ function App() {
       {clicked ? <NavMenu clicked={clicked} isClicked={isClicked} /> : null}
       <Routes>
         <Route path='/' element={<Home />} ></Route>
-        <AuthProvider>
         <Route path='/signin' element={<Signin />} ></Route> 
         <Route path='/login' element={<Login />} ></Route>
-        </AuthProvider> 
       </Routes>
     </>
   )
